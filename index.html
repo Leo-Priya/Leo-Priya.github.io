@@ -9,22 +9,25 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('img/landing/leo_pri.png'); /* Set the background image for the whole page */
-            background-size: cover;
-            background-position: center;
         }
 
-        /* Style for the content container */
-        .content-container {
+        /* Style for the background image */
+        .background-image {
+            background-image: url('img/landing/leo_pri.png'); /* Replace 'background.jpg' with your actual background image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Style for the content in the middle */
+        .content {
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
             padding: 20px;
             border-radius: 10px;
-            width: 50%;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
         }
 
         /* Style for the text */
@@ -35,7 +38,7 @@
 
         /* Style for the entry button */
         .entry-button {
-            display: block;
+            display: inline-block;
             background-color: #ff4500; /* Customize button color */
             color: white;
             padding: 10px 20px;
@@ -43,7 +46,6 @@
             border-radius: 5px;
             font-weight: bold;
             transition: background-color 0.3s ease;
-            margin-top: 20px; /* Add margin to separate the button from the text */
         }
 
         .entry-button:hover {
@@ -52,9 +54,11 @@
     </style>
 </head>
 <body>
-    <div class="content-container">
-        <h1>We're Getting Married!</h1>
-        <a href="about.html" class="entry-button">Entry</a>
+    <div class="background-image">
+        <div class="content">
+            <h1>We're Getting Married!</h1>
+            <a href="about.html" class="entry-button">Entry</a>
+        </div>
     </div>
 </body>
 </html>
