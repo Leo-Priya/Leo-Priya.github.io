@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-.column {
-  float: left;
-  width: 50.00%;
-  padding: 0px;
-}
+        /* Style for the background image */
+        .background-image {
+            background-image: url('img/landing/leo_pri.png'); /* Replace 'background.jpg' with your actual background image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
+        /* Style for the content in the middle */
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Style for the text */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the entry button */
+        .entry-button {
+            display: inline-block;
+            background-color: #ff4500; /* Customize button color */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .entry-button:hover {
+            background-color: #ff6b00; /* Change color on hover */
+        }
+    </style>
 </head>
 <body>
-
-<div class="row">
-  <div class="centered">"We're getting married!"</div>
-  <div class="column">
-    <img src="img/landing/pri1.jpg" alt="Pree" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="img/landing/leo1.jpg" alt="Leo" style="width:100%">
-  </div>
+    <div class="background-image">
+        <div class="content">
+            <h1>We're Getting Married!</h1>
+            <a href="about.html" class="entry-button">Entry</a>
+        </div>
+    </div>
 </body>
 </html>
