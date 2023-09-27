@@ -1081,3 +1081,36 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .credits a {
   color: #0c2e8a;
 }
+
+/* Set background image for the countdown container */
+.countdown-container {
+    background-image: url('img/timer_bckgrnd2.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px; /* Add padding to improve visibility of countdown */
+    color: #ffffff; /* Set text color to white for readability */
+    font-family: Arial, sans-serif; /* Set font family */
+    font-size: 16px; /* Set default font size */
+}
+
+/* Style for the countdown timer elements */
+.countdown-container div {
+    display: inline-block;
+    margin: 10px; /* Adjust margin for spacing between elements */
+}
+
+/* Style for the countdown timer values */
+.countdown-container span {
+    font-size: 24px; /* Customize font size */
+    font-weight: bold; /* Customize font weight */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Set text color for the heading */
+    font-family: Arial, sans-serif; /* Set font family for the heading */
+    font-size: 36px; /* Customize font size for the heading */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
