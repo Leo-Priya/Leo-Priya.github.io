@@ -202,6 +202,22 @@
         max-width: 100%;
         height: auto;
 }
+/* Responsive design for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+            .about-us-section {
+                flex-direction: column; /* Stack elements vertically on smaller screens */
+                text-align: center;
+            }
+
+            .about-us-text {
+                flex: auto; /* Allow text to take full width */
+                margin-top: 20px; /* Add space above text on smaller screens */
+            }
+
+            .about-us-image {
+                flex: auto; /* Allow images to take full width */
+            }
+        }
 
   </style>
     
