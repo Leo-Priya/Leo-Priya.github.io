@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo&Priya</title>
     <style>
         /* Reset some default styles */
@@ -17,8 +17,7 @@
             background-image: url('img/landing/leo_pri.png'); /* Replace 'background.jpg' with your actual background image URL */
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Ensure the background image covers the entire viewport */
-            min-height: 100vh;
+            height: 110vh; /* Adjust the height as needed */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,12 +29,11 @@
             background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background for readability */
             padding: 20px;
             border-radius: 10px;
-            max-width: 80%; /* Limit content width on smaller screens */
         }
 
         /* Style for the text */
         h1 {
-            font-size: 36px; /* Reduce font size for mobile */
+            font-size: 60px;
             margin-bottom: 10px;
         }
 
@@ -56,11 +54,15 @@
         .entry-button:hover {
             background-color: rgba(255, 255, 255, 0.2); /* Change color on hover (semi-transparent) */
         }
-
+        
         /* Responsive design for smaller screens (e.g., mobile) */
         @media (max-width: 768px) {
             .background-image {
-                background-attachment: scroll; /* Change background-attachment for mobile */
+                min-height: 10vh; /* Adjust the minimum height for smaller screens */
+            }
+
+            .content {
+                padding: 15px; /* Reduce padding on smaller screens */
             }
         }
     </style>
