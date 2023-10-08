@@ -84,10 +84,21 @@
         /* Style for the embedded Google Maps iframes */
         .map-iframe {
             width: 100%;
-            max-width: 100%; /* Ensure map stays within container */
             height: auto; /* Allow map to adjust its height for responsiveness */
             border: 0;
             margin-top: 20px; /* Add space between maps and description */
+        }
+
+        /* Set a maximum width for the container on smaller screens */
+        @media (max-width: 768px) {
+            .travel-plan-box {
+                max-width: 100%; /* Set to 100% for smaller screens */
+                padding: 0 20px; /* Add padding for better readability */
+            }
+
+            .map-iframe {
+                max-width: 100%; /* Set maps to 100% width on smaller screens */
+            }
         }
 
         /* Hover effect for the back link */
