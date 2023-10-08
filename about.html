@@ -370,11 +370,7 @@
     	flex-direction: column;
     	justify-content: center;
     	align-items: center;
-  	}
-
-  	/* Center the text within the box */
-  	.box-inner {
-    	text-align: center;
+	text-align: center;
   	}
 
 	/* Style for custom icons */
@@ -382,12 +378,14 @@
     	width: 50px; /* Set the width of the custom icon */
     	height: 50px; /* Set the height of the custom icon */
     	content: ''; /* Clear the content for FontAwesome icons */
+	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: center;
   	}
 
 	/* Center the text below the custom icon */
   	.title {
     	margin-top: 5px; /* Adjust the margin as needed to center the text */
-	text-align: center; /* Center the text horizontally */
   	}
 	    
     </style>
@@ -407,11 +405,9 @@
           <div class="col-lg-6">
 	   <a href="25_nov.html">
             <div class="box wow fadeInLeft" style="background-image: url('img/timer_bckgrnd2.jpg'); height: 250px;">
-	      <div class="box-inner">
-              <img src="img/icon1.png" alt="Custom Icon">
+	      <div class="custom-icon" style="background-image: url('img/icon1.png');"></div>
               <h4 class="title"><a href="25_nov.html">25 November</a></h4>
               <p class="description">Events on 25.11.2023.</p>
-	     </div>
             </div>
 	    </a>
           </div>
