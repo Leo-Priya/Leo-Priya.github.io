@@ -81,35 +81,11 @@
             margin: 20px 0;
         }
 
-        /* Style for the embedded Google Maps iframes */
+        /* Style for the embedded Google Maps iframe */
         .map-iframe {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+            max-width: 80%;
+            height: auto; /* Allow map to adjust its height for responsiveness */
             border: 0;
-            margin-top: 20px;
-        }
-
-        /* Make the map iframes responsive */
-        .map-responsive {
-            overflow: hidden;
-            padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
-            position: relative;
-            height: 0;
-        }
-
-        .map-responsive iframe {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-
-        /* Set a maximum width for the container on smaller screens */
-        @media (max-width: 768px) {
-            .travel-plan-box {
-                max-width: 100%;
-                padding: 0 20px;
-            }
         }
 
         /* Hover effect for the back link */
