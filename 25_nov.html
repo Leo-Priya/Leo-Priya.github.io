@@ -81,19 +81,21 @@
             margin: 20px 0;
         }
 
-        /* Style for the embedded Google Maps iframes */
-        .map-iframe {
-            width: 100%;
-            height: auto; /* Allow map to adjust its height for responsiveness */
-            border: 0;
-            margin-top: 20px; /* Add space between maps and description */
+        /* Style for the custom map container on mobile */
+        .custom-map-container {
+            background-image: url(''img/bg4.jpg''); /* Replace with your mobile map background image URL */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
         }
 
-        /* Set a maximum width for map iframes on smaller screens */
-        @media (max-width: 768px) {
-            .map-iframe {
-                max-width: 100%; /* Set to 100% for smaller screens */
-            }
+        /* Style for the embedded Google Maps iframe */
+        .map-iframe {
+            max-width: 100%;
+            height: auto; /* Allow map to adjust its height for responsiveness */
+            border: 0;
         }
 
         /* Hover effect for the back link */
@@ -130,6 +132,25 @@
             </div>
         </div>
     </div>
+
+    <!-- Custom map section for mobile -->
+    <div class="container d-block d-lg-none">
+        <div class="row">
+            <div class="col-12">
+                <div class="custom-map-container">
+                    <!-- Check-in at Hotel Map for Mobile -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.431364713398!2d73.75235450847424!3d18.599657866685202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b96492629985%3A0x16c87a603a0bbb7f!2sSayaji%20Hotel!5e0!3m2!1sen!2sch!4v1696798951063!5m2!1sen!2sch" class="map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="custom-map-container">
+                    <!-- Dinner at BBQ Nation Map for Mobile -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273.0556944721568!2d73.75481986240005!3d18.59950996772443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b964ed51b375%3A0xdd8c68784e74d451!2sBarbeque%20Nation%20-%20Pune%20-%20Wakad!5e0!3m2!1sen!2sch!4v1696798980335!5m2!1sen!2sch" class="map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
