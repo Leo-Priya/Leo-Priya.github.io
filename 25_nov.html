@@ -81,11 +81,35 @@
             margin: 20px 0;
         }
 
-        /* Style for the embedded Google Maps iframe */
+        /* Style for the embedded Google Maps iframes */
         .map-iframe {
+            width: 100%;
             max-width: 100%;
-            height: auto; /* Allow map to adjust its height for responsiveness */
+            height: auto;
             border: 0;
+            margin-top: 20px;
+        }
+
+        /* Make the map iframes responsive */
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        /* Set a maximum width for the container on smaller screens */
+        @media (max-width: 768px) {
+            .travel-plan-box {
+                max-width: 100%;
+                padding: 0 20px;
+            }
         }
 
         /* Hover effect for the back link */
@@ -106,7 +130,7 @@
                             <i class="custom-icon fa fa-clock-o"></i> 2:00 PM onwards: Check-in at Sayaji Hotel
                         </div>
                         <!-- Check-in at Hotel Map -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3781.4314772469247!2d73.75493479999999!3d18.599652799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sch!4v1696799493655!5m2!1sen!2sch" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3781.4314772469247!2d73.75493479999999!3d18.599652799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sch!4v1696799493655!5m2!1sen!2sch" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         <div class="time-details">
                             <i class="custom-icon fa fa-clock-o"></i> 7:00 PM onwards: Dinner at BBQ Nation
