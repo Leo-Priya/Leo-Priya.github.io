@@ -371,21 +371,26 @@
     	justify-content: center;
     	align-items: center;
 	text-align: center;
+	position: relative;
   	}
 
 	/* Style for custom icons */
   	.custom-icon {
-    	width: 50px; /* Set the width of the custom icon */
-    	height: 50px; /* Set the height of the custom icon */
+    	width: 60px; /* Set the width of the custom icon */
+    	height: 60px; /* Set the height of the custom icon */
     	content: ''; /* Clear the content for FontAwesome icons */
 	background-size: cover;
     	background-repeat: no-repeat;
     	background-position: center;
   	}
 
-	/* Center the text below the custom icon */
+  	/* Center the text below the custom icon */
   	.title {
-    	margin-top: 5px; /* Adjust the margin as needed to center the text */
+    	margin-top: 10px; /* Adjust the margin as needed to center the text */
+    	position: absolute;
+    	bottom: 10px; /* Adjust the distance from the bottom as needed */
+    	left: 50%;
+    	transform: translateX(-50%);
   	}
 	    
     </style>
