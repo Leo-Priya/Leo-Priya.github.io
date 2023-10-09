@@ -79,19 +79,23 @@
 
         /* Style for the fancy button */
         .fancy-button {
-        display: inline-block; /* Change from inline-block to block */
-        margin: 20px auto 0; /* Center horizontally and add margin at the top */
-        font-size: 16px;
-        padding: 10px 20px;
-        background-color: #FF6B6B;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        text-decoration: none;
-        font-weight: bold;
-        }
+  display: inline-block; /* Change from inline-block to block */
+  margin: 20px auto 0; /* Center horizontally and add margin at the top */
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #FF6B6B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
         /* Hover effect */
         .fancy-button:hover {
