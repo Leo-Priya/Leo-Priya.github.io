@@ -30,25 +30,26 @@
         }
 
         .header h1 {
-            font-size: 24px;
+            font-size: 36px;
             color: #333;
         }
 
         .event-image {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
         }
 
         .event-image2 {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
         }
 
         .event-details {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -72,6 +73,12 @@
             margin-top: 0;
         }
 
+        .event-details h3 {
+            font-size: 20px;
+            color: #666;
+            margin-top: 0;
+        }
+
         .event-details p {
             font-size: 18px;
             color: #666;
@@ -87,24 +94,23 @@
 
         @media (min-width: 768px) {
             .header h1 {
-                font-size: 36px;
+                font-size: 24px;
             }
 
             .event-details {
-                flex-direction: row;
+                flex-direction: column;
             }
 
             .event-details .text {
-                flex: 1;
                 padding: 0 20px;
             }
 
             .event-details h2 {
-                font-size: 24px;
+                font-size: 20px;
             }
 
             .event-details h3 {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
         
@@ -122,9 +128,7 @@
             <br>
             <div class="text">
                 <h2>Haldi Ceremony</h2>
-                <br>
                 <h3>10 am onwards</h3>
-                <br>
                 <p>
                     Join us for the traditional Haldi ceremony to bless the couple with love and happiness.
                     Don't forget to wear yellow!
@@ -136,8 +140,8 @@
             <img src="img/events/party2.png" alt="Sangeet Ceremony" class="event-image2">
             <br>
             <div class="text">
-                <h2>Sangeet Ceremony</h2><br>
-                <h3>7 pm onwards</h3><br>
+                <h2>Sangeet Ceremony</h2>
+                <h3>7 pm onwards</h3>
                 <p>
                     Let's celebrate with joy and music at the Sangeet ceremony.
                     Dress your best and dance the night away!
