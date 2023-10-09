@@ -823,6 +823,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  color: black; /* Add this line to set the text color to black */
 }
 
 #testimonials .owl-nav, #testimonials .owl-dots {
