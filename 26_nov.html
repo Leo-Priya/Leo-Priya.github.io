@@ -79,71 +79,66 @@
 
         /* Style for the fancy button */
         .fancy-button {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #FF6B6B;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    font-weight: bold;
-  }
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #FF6B6B; /* Background color */
+            color: #fff; /* Text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-  /* Hover effect */
-  .fancy-button:hover {
-    background-color: #FF3030;
-  }
+        /* Hover effect */
+        .fancy-button:hover {
+            background-color: #FF3030; /* Change color on hover */
+        }
 
-  .footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-  }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
 
-  @media (min-width: 768px) {
-    .event-image {
-      width: 300px;
-      height: auto;
-    }
+        @media (min-width: 768px) {
+            .event-image {
+                width: 300px; /* Set max-width for larger screens */
+                height: auto; /* Set height for larger screens */
+            }
 
-    .event-image2,
-    .event-image3,
-    .event-image4 {
-      width: 300px;
-      height: auto;
-    }
+            .event-image2, .event-image3, .event-image4 {
+                width: 300px; /* Set max-width for larger screens */
+                height: auto; /* Set height for larger screens */
+            }
+            .header h1 {
+                font-size: 36px;
+            }
 
-    .header h1 {
-      font-size: 36px;
-    }
+            .event-details {
+                flex-direction: row;
+            }
 
-    .event-details {
-      flex-direction: row;
-    }
+            .event-details .text {
+                flex: 1;
+                padding: 0 20px;
+            }
 
-    .event-details .text {
-      flex: 1;
-      padding: 0 20px;
-    }
+            .event-details h2 {
+                font-size: 24px;
+            }
 
-    .event-details h2 {
-      font-size: 24px;
-    }
-
-    .event-details h3 {
-      font-size: 20px;
-    }
-  }
-</style>
-
+            .event-details h3 {
+                font-size: 20px;
+            }
+        }
+        
+    </style>
 </head>
 <body>
     <div class="container">
