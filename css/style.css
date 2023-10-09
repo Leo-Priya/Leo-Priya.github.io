@@ -8,12 +8,8 @@
 # General
 --------------------------------------------------------------*/
 
-#body{
-    background-color: violet;
-}
-
 body {
-  background: #fff;
+  background: #451952;
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
