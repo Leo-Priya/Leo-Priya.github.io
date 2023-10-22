@@ -142,6 +142,32 @@
                 justify-content: space-between; /* Add space between them */
                 align-items: center; /* Vertically align them */
                 }
+
+            .event-details {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #ccc; /* Add a border for visual separation */
+                border-radius: 10px; /* Add border radius for rounded corners */
+                padding: 10px; /* Add padding to the box */
+                max-width: 300px; /* Set a maximum width for the box */
+                text-align: center;
+                }
+
+        .event-image-left,
+        .event-image-right {
+            max-width: 100px; /* Set the maximum width for the images on both sides */
+            height: auto;
+            }
+
+        .event-image-left {
+            margin-right: 10px; /* Add margin for spacing between the image and text */
+            }
+
+        .event-image-right {
+            margin-left: 10px; /* Add margin for spacing between the image and text */
+            }
+
         }
         
     </style>
@@ -154,7 +180,7 @@
         </div>
 
         <div class="event-details">
-            <img src="img/events/baraat2.png" alt="Haldi Ceremony" class="event-image">
+            <img src="img/events/baraat2.png" alt="Haldi Ceremony" class="event-image-left">
             <br>
             <div class="text">
                 <h3>Getting Ready: 3 pm onwards</h3>
@@ -165,47 +191,9 @@
                 <br>
                 <h3>Phere: 10 pm onwards</h3>
             </div>
+             <img src="img/events/baraat2.png" alt="Haldi Ceremony" class="event-image-right">
         </div>
 
-        <div class="event-details">
-            <img src="img/events/mehndi.png" alt="Mehendi Ceremony" class="event-image3">
-            <br>
-            <div class="text">
-                <h2>Mehndi Ceremony</h2>
-                <h3>10 am onwards</h3>
-                <br>
-                <p>
-                    Mehndi ceremonies are a delightful blend of tradition and modernity, where the bride and her loved ones gather to celebrate with music, dance, and henna application, creating a beautiful tapestry of cultural significance and festivity.
-                </p>
-            </div>
-        </div>
-
-            <div class="event-details">
-            <img src="img/events/food2.png" alt="Tilak/Lagan Ceremony" class="event-image4">
-            <br>
-            <div class="text">
-                <h2>Tilak/Lagan Ceremony</h2>
-                <h3>15:30 to 16:30 pm</h3>
-                <br>
-                <p>
-                    Tilak Ceremony is reckoned as the first step to the bond between the two families. This auspicious event takes place mostly in the groom's residence, where the male members of the bride's family visit to put Kumkum or vermilion on his forehead.
-                </p>
-            </div>
-        </div>
-
-        <div class="event-details">
-            <img src="img/events/party2.png" alt="Sangeet Ceremony" class="event-image2">
-            <br>
-            <div class="text">
-                <h2>Sangeet Ceremony</h2>
-                <h3>7 pm onwards</h3><br>
-                <p>
-                    Let's celebrate with joy and music at the Sangeet ceremony.
-                    Dress your best and dance the night away!
-                </p>
-            </div>
-        </div>
-    </div>
 
     <a href="about.html" class="fancy-button">Back to Home</a>
 
