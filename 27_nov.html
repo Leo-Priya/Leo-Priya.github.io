@@ -34,49 +34,6 @@
             color: #333;
         }
 
-        .event-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .event-image2 {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .event-details {
-            display: flex;
-            flex-direction: column;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .event-details img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .event-details .text {
-            flex: 1;
-            padding: 0 20px;
-        }
-
-        .event-details h2 {
-            font-size: 24px;
-            color: #333;
-            margin-top: 0;
-        }
-
-        .event-details p {
-            font-size: 18px;
-            color: #666;
-        }
-
         /* Style for the fancy button */
         .fancy-button {
             display: inline-block;
@@ -106,67 +63,52 @@
             color: #fff;
         }
 
-        @media (min-width: 768px) {
-            .event-image,  .event-image-left, .event-image-right {
-                width: 300px; /* Set max-width for larger screens */
-                height: auto; /* Set height for larger screens */
+        /* Common styles for all screen sizes */
+        .event-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 300px;
+            text-align: center;
             }
 
-            .event-image2, .event-image3, .event-image4 {
-                width: 300px; /* Set max-width for larger screens */
-                height: auto; /* Set height for larger screens */
-            }
-            .header h1 {
-                font-size: 36px;
+        .event-details h3 {
+            margin: 0; /* Remove default margin from h3 elements */
             }
 
-            .event-details {
-                flex-direction: row;
-            }
-
-            .event-details .text {
-                flex: 1;
-                padding: 0 20px;
-            }
-
-            .event-details h2 {
-                font-size: 24px;
-            }
-
-            .event-details h3 {
-                font-size: 20px;
-            }
-
-            .event-header {
-                display: flex; /* Display the h2 and h3 elements side by side */
-                justify-content: space-between; /* Add space between them */
-                align-items: center; /* Vertically align them */
-                }
-
-            .event-details {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid #ccc; /* Add a border for visual separation */
-                border-radius: 10px; /* Add border radius for rounded corners */
-                padding: 10px; /* Add padding to the box */
-                max-width: 300px; /* Set a maximum width for the box */
-                text-align: center;
-                }
-
-        .event-image-left,
-        .event-image-right {
-            max-width: 100px; /* Set the maximum width for the images on both sides */
+        .event-image-left, .event-image-right {
+            max-width: 100px;
             height: auto;
             }
 
         .event-image-left {
-            margin-right: 10px; /* Add margin for spacing between the image and text */
+            margin-right: 10px;
             }
 
         .event-image-right {
-            margin-left: 10px; /* Add margin for spacing between the image and text */
+            margin-left: 10px;
             }
+
+        /* Media query for screens larger than 768px (adjust the breakpoint as needed) */
+        @media (min-width: 768px) {
+            .event-details {
+                flex-direction: row; /* Horizontal layout for larger screens */
+                max-width: 100%; /* Full width for larger screens */
+            }
+
+        .event-details .text {
+            flex: 1; /* Allow the text to expand and fill available space */
+            text-align: left; /* Adjust text alignment as needed */
+            }
+
+        .event-image-left, .event-image-right {
+            max-width: 50px; /* Adjust image size for larger screens */
+            }
+}
+
 
         }
         
@@ -198,7 +140,7 @@
     <a href="about.html" class="fancy-button">Back to Home</a>
 
     <div class="footer">
-        &copy; 2023 Priya and Leo Wedding Ceremony
+        &copy; 2023 Priya and Leo
     </div>
 </body>
 </html>
